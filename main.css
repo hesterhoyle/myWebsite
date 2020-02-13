@@ -1,0 +1,205 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* background for certain pages (labelled bodies) */
+#pageBackground {
+    background-image: url('images/hexagonBack.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* menu bar, including colours and positioning */
+.menuBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(65, 59, 59);
+  }
+  .menu {
+    float: left;
+    border-right:1px solid rgb(214, 214, 214);
+    font-family: 'Tomorrow', sans-serif;
+  }
+  .menu:last-child {
+    border-right: none;
+  }
+  .menu a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .menu a:hover:not(.active) {
+    background-color: rgb(0, 0, 0);
+  }
+  .active {
+    background-color: rgb(151, 7, 7);
+  }
+
+/* general text */
+p {
+    text-align: justify;
+    font-family: 'Cambay', sans-serif;
+}
+dl {
+    font-family: 'Cambay', sans-serif;
+}
+
+/* Main header on index page */
+#Heading {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* main header image responsive */
+#coverImg {
+    max-width: 100%;
+    height: auto;
+}
+
+#copyright {
+    text-align: right;
+    font-size: 12px;
+    padding-right: 30px;
+}
+
+#welcomeText {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+/* headers */
+h1, h2, h3 {
+    font-family: 'Tomorrow', sans-serif;
+}
+h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+/* questions navigation at top of page */
+#quesNav {
+    padding-left: 30px;
+    padding-top: 20px;
+    background-color: rgb(255, 255, 255, 0.6)
+}
+/* questions body text */
+.bodyText {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgb(255, 255, 255, 0.6)
+}
+
+/* line break images */
+.break {
+    display: flex;
+    justify-content: center;
+}
+.breakImg {
+    width: 50px;
+    height: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* footer section */
+#footer {
+    background-color: rgb(97, 93, 93);
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+#logos {
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    width: 50px;
+    height: auto;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+#footerText {
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+/* flexbox for text, to run in column so it can go next to image */
+#textPage {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+.aboutList {
+    font-family: 'Cambay', sans-serif;
+}
+#aboutText {
+    text-align: center;
+}
+
+/* flexbox including image and text */
+#Hester {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#hesterPic {
+    width: 440px;
+    height: 782px;
+    padding-right: 10px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+#hesterHeader {
+    text-align: center;
+}
+
+#personalStatement {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgb(255, 255, 255, 0.6);
+}
+
+/* smaller about images */
+#moreImages {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+.bonusImg {
+    width: 200px;
+    height: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/* small images change opacity when hovered over */
+.bonusImg:hover {
+    opacity: 0.5;
+}
+
+.wookiePic, .henryPic, .doublePic {
+    height: 200px;
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* images change opacity when hovered over */
+.wookiePic:hover, .henryPic:hover, .doublePic:hover {
+    opacity: 0.5;
+}
